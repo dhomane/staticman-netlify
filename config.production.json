@@ -1,0 +1,10 @@
+{
+    "githubToken": process.env.GITHUB_TOKEN,
+    "rsaPrivateKey": JSON.stringify(process.env.RSA_PRIVATE_KEY),
+    "rsaPrivateKey": JSON.stringify(process.env.RSA_PRIVATE_KEY),
+    "port": 8080,
+    "githubAuth": {
+        "clientId": process.env.GITHUB_APP_CLIENT_ID,
+        "clientSecret": process.env.GITHUB_APP_CLIENT_SECRET,
+    }
+  }

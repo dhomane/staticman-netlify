@@ -1,0 +1,12 @@
+.idea/
+*.iml
+.dev_env
+config.json
+config.*.json
+!config.test.json
+!config.production.json
+!config.example.json
+coverage/
+node_modules/
+staticman_key
+functions
