@@ -65,6 +65,26 @@ Staticman will look for a config file. For the deprecated `v1` endpoints, this i
 
 For a list of available configuration parameters, please refer to the [documentation page](https://staticman.net/docs/configuration).
 
+## Deploy to Netlify
+
+You can use netlify-cli or just connect your GitHub repository to Netlify(which can be done from the GUI). If you prefer netlify-cli, then follow this steps:
+
+1. Run `netlify dev` to run the server in local machine.
+2. If everything runs fine, then deploy it to a deployment site using `netlify deploy`.
+
+You need to update the netlify environment variables from "Site Settings> Build and Deployment > Environment" and add following settings:
+```
+AKISMET_API_KEY // optional
+AKISMET_SITE // optional
+EMAIL_API_KEY 
+EMAIL_DOMAIN
+EMAIL_FROM
+GITHUB_APP_CLIENT_ID
+GITHUB_APP_CLIENT_SECRET
+GITHUB_TOKEN
+RSA_PRIVATE_KEY
+```
+
 ## Development
 
 Would you like to contribute to Staticman? That's great! Here's how:
@@ -73,6 +93,7 @@ Would you like to contribute to Staticman? That's great! Here's how:
 1. Pull the repository and start hacking
 1. Make sure tests are passing by running `npm test`
 1. Send a pull request and celebrate
+
 
 ## Useful links
 
