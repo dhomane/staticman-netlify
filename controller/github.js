@@ -1,8 +1,9 @@
 const { Octokit } = require("@octokit/rest");
 const { createOAuthAppAuth } = require("@octokit/auth-oauth-app");
+const config = require('../config')
 
-const GITHUB_APP_CLIENT_ID = "bc27cd2859301269f316";
-const GITHUB_APP_CLIENT_SECRET = "ba80e0ea48ef84185e34e579e2724eea9c01142f";
+const GITHUB_APP_CLIENT_ID = config.get('githubClientId');
+const GITHUB_APP_CLIENT_SECRET config.get('githubClientSecret');
 
 module.exports = (originalFunction) => {
   return async (req, res, next) => {
